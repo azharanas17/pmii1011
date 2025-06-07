@@ -2,7 +2,7 @@
 title: Sejarah PMII Sepuluh Nopember
 date: 2008-10-28T00:40:00.000Z
 author: admin
-featured_image: ../assets/uploads/logo-komisariat-pmii-sepuluh-nopember.png
+featured_image: assets/uploads/logo-komisariat-pmii-sepuluh-nopember.png
 ---
 
 Sejak PMII dideklarasikan 17 April 1960, perkembangan organisasi ini sangatlah cepat terutama di kampus-kampus agama. Namun demikian pada tahun yang sama PMII telah berdiri di kampus ITS ( Institut Teknologi Sepuluh Nopember) yang tak lain merupakan kampus teknik. Ketua pertama PMII Sepuluh Nopember adalah Almarhum Abdul Mannan (Dosen Fisika ITS, Kandidat Peraih Nobel Fisika). Tetapi keberadaan PMII di ITS tak bertahan lama, PMII mati suri. Kemudian pada tahun 1980-an PMII Sepuluh Nopember kembali berdiri, tetapi mengalami hal yang sama dengan sebelumnya.
