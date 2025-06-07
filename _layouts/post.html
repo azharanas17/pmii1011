@@ -1,230 +1,362 @@
-<!DOCTYPE html>
-<html lang="id">
+<html>
 
 <head>
-  <meta charSet="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{ page.title }}</title>
   <title data-react-helmet="true"></title>
-  <title data-react-helmet="true">{{ page.title }}</title>
-  <meta data-react-helmet="true" property="og:description"
-    content="Organisasi mahasiswa ekstra kampus ITS yang menghimpun dan membina mahasiswa islam Indonesia sesuai dengan sifat dan tujuan PMII serta peraturan perundang-undangan dan paradigma PMII yang berlaku." />
-  <meta data-react-helmet="true" name="robots" content="index, follow" />
-  <meta data-react-helmet="true" name="googlebot" content="index, follow" />
-  <meta data-react-helmet="true" name="msnbot" content="index, follow" />
-  <meta data-react-helmet="true" name="description"
-    content="Organisasi mahasiswa ekstra kampus ITS yang menghimpun dan membina mahasiswa islam Indonesia sesuai dengan sifat dan tujuan PMII serta peraturan perundang-undangan dan paradigma PMII yang berlaku." />
-  <meta data-react-helmet="true" name="keywords"
-    content="PMII, ORMEK, Pergerakan, Mahasiswa, Islam, Indonesia, NU, Nahdlatul-Ulama, aswaja, ITS, PPNS, PENS, Institut, teknologi, sepuluh, nopember, cabang surabaya, cipayung, Himpunan, HMI, GMNI, aktivis, mustadzafin " />
-  <meta data-react-helmet="true" name="author" content="PMII 1011" />
-  <meta data-react-helmet="true" property="og:image"
-    content="./static/Logo-Media-PMII-Sepuluh-Nopember-og-image-687879a682e05e4ed320a108dd0c2b2a.png" />
-  <meta data-react-helmet="true" property="og:image:secure_url"
-    content="./static/Logo-Media-PMII-Sepuluh-Nopember-og-image-687879a682e05e4ed320a108dd0c2b2a.png" />
-  <meta data-react-helmet="true" property="og:image:width" content="300" />
-  <meta data-react-helmet="true" property="og:image:height" content="300" />
-  <meta data-react-helmet="true" property="og:image:type" content="image/jpeg" />
-  <meta name="theme-color" content="#663399" />
-  <meta data-react-helmet="true" property="og:locale" content="ID" />
-  <meta data-react-helmet="true" property="og:type" content="website" />
-  <meta data-react-helmet="true" property="og:title" content="PMII Sepuluh Nopember" />
-  <meta name="generator" content="Gatsby 2.32.11" />
-  <meta data-react-helmet="true" property="og:url" content="https://pmii1011.github.io/" />
-  <meta data-react-helmet="true" property="og:site_name" content="PMII Sepuluh Nopember" />
-  <meta data-react-helmet="true" property="og:type" content="website" />
-  <meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
-  <meta data-react-helmet="true" name="twitter:site" content="@pmii1011" />
-  <meta data-react-helmet="true" name="twitter:title" content="PMII Sepuluh Nopember" />
-  <meta data-react-helmet="true" name="twitter:description"
-    content="Organisasi mahasiswa ekstra kampus ITS yang menghimpun dan membina mahasiswa islam Indonesia sesuai dengan sifat dan tujuan PMII serta peraturan perundang-undangan dan paradigma PMII yang berlaku." />
-  <meta data-react-helmet="true" name="twitter:image"
-    content="./static/Logo-Media-PMII-Sepuluh-Nopember-f7abeeb21fe3c4e2e0812b0d16749f3c.png" />
-  <meta data-react-helmet="true" name="google-site-verification"
-    content="rS1cKVMTZrZs4z_nsB3vhaQxUOY7K6Na0onEz9ztjyY" />
-  <meta data-react-helmet="true" property="og:image:alt" content="PMII Sepuluh Nopember" />
-  <link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c" />
-  <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c" />
-  <link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c" />
-  <link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c" />
-  <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c" />
-  <link rel="icon" href="/favicon-32x32.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c" type="image/png" />
-  <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous" />
-  <link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous" />
-  <link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c" />
-  <link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml" />
-  <link rel="preconnect" href="https://www.google-analytics.com" />
-  <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c" />
+  <meta name="theme-color" content="#663399">
+  <meta name="generator" content="Gatsby 2.32.11">
+  <!-- <link as="script" rel="preload" href="/webpack-runtime-2d98db71efbc2f12e81b.js"> -->
+  <link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c">
+  <link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c">
+  <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c">
+  <link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c">
+  <link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c">
+  <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c">
+  <link rel="icon" href="/favicon-32x32.png?v=f7abeeb21fe3c4e2e0812b0d16749f3c" type="image/png">
+  <link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml">
+  <link as="script" rel="preload" href="/b637e9a5-fbecc350bf7487bab4ed.js">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous">
+  <!-- <link as="script" rel="preload" href="/framework-a4c869fc5235f266498a.js"> -->
+  <!-- <link as="script" rel="preload" -->
+    <!-- href="/component---cache-caches-gatsby-plugin-offline-app-shell-js-77466cc0b3ed4dac08eb.js"> -->
+  <!-- <link as="script" rel="preload" href="/styles-84a9bc99193fe5828ffe.js"> -->
+  <!-- <link as="script" rel="preload" href="/app-e5b3c524403fa64bb12b.js"> -->
+  <!-- <link as="script" rel="preload" href="/dc6a8720040df98778fe970bf6c000a41750d3ae-4d99bdb91536ae08f1fc.js"><noscript> -->
+    <!-- <meta http-equiv="refresh" content="0;url=/.gatsby-plugin-offline:api=disableOfflineShell&amp;redirect=true" /> -->
+  <!-- </noscript> -->
+  
+  <!-- <script type="text/javascript" async=""
+    src="https://www.googletagmanager.com/gtag/js?id=G-RJ42KR0Y50&amp;cx=c&amp;_slc=1"></script>
+  <script charset="utf-8" src="/34ff0e705d9d6c0c9e259682346308371f975792-55d98fcbb80d3a0c55e9.js"></script>
+  <script charset="utf-8" src="/174c210276b2a1900b9449ef7ce7e2ca26d4cafd-33c0f270923c5076ccfa.js"></script>
+  <script charset="utf-8" src="/c00c419652e315d4bea59f2c7dafcdd31e4bc80d-62342492ed3a093fd6a2.js"></script>
+  <script charset="utf-8" src="/a2ba08da42811f918235d5122e04ae8df5365b52-7b260b4584d21577d008.js"></script>
+  <script charset="utf-8" src="/2036917b9140e75906b81346e52f0a43f49ae0a1-3049c2d319875b7c114d.js"></script>
+  <script charset="utf-8" src="/component---src-templates-blog-post-archive-js-159c67c0baaaba7af1bd.js"></script> -->
+  <meta name="robots" content="index, follow" data-react-helmet="true">
+  <meta name="googlebot" content="index, follow" data-react-helmet="true">
+  <meta name="msnbot" content="index, follow" data-react-helmet="true">
+  <meta name="keywords"
+    content="PMII, ORMEK, Pergerakan, Mahasiswa, Islam, Indonesia, NU, Nahdlatul-Ulama, aswaja, ITS, PPNS, PENS, Institut, teknologi, sepuluh, nopember, cabang surabaya, cipayung, Himpunan, HMI, GMNI, aktivis, mustadzafin "
+    data-react-helmet="true">
+  <meta name="author" content="PMII 1011" data-react-helmet="true">
+  <meta property="og:image:type" content="image/jpeg" data-react-helmet="true">
+  <meta property="og:locale" content="ID" data-react-helmet="true">
+  <meta property="og:type" content="website" data-react-helmet="true">
+  <meta property="og:site_name" content="PMII Sepuluh Nopember" data-react-helmet="true">
+  <meta property="og:type" content="website" data-react-helmet="true">
+  <meta name="twitter:card" content="summary_large_image" data-react-helmet="true">
+  <meta name="twitter:site" content="@pmii1011" data-react-helmet="true">
+  <meta name="google-site-verification" content="rS1cKVMTZrZs4z_nsB3vhaQxUOY7K6Na0onEz9ztjyY" data-react-helmet="true">
+  <!-- <link rel="prefetch" href="/page-data/daftar/page-data.json" crossorigin="anonymous" as="fetch">
+  <link rel="prefetch" href="/component---src-pages-daftar-js-3edd5d5f0023aecc6a56.js">
+  <link rel="prefetch" href="/page-data/about-idata1011/page-data.json" crossorigin="anonymous" as="fetch">
+  <link rel="prefetch" href="/page-data/tebarkan-cinta-melalui-ramadhan-ceria/page-data.json" crossorigin="anonymous"
+    as="fetch">
+  <link rel="prefetch"
+    href="/page-data/gerakan-sadar-berbagi-dalam-rangka-menyambut-harlah-pmii-ke-61-dan-bulan-suci-ramadhan/page-data.json"
+    crossorigin="anonymous" as="fetch">
+  <link rel="prefetch" href="/component---src-templates-blog-post-js-bc1330d6a3fe0cb9486f.js">
+  <link rel="prefetch" href="/component---src-templates-blog-post-js-bc1330d6a3fe0cb9486f.js">
+  <link rel="prefetch" href="/component---src-templates-blog-post-js-bc1330d6a3fe0cb9486f.js">
+  <link rel="prefetch"
+    href="/page-data/tingkatkan-hardskill-dengan-pelatihan-desain-3d-bersama-pmii-rayon-pens-x-today-cad-pro/page-data.json"
+    crossorigin="anonymous" as="fetch">
+  <link rel="prefetch" href="/page-data/jepits-sepuluh-nopember/page-data.json" crossorigin="anonymous" as="fetch">
+  <link rel="prefetch" href="/page-data/sejarah-pmii-sepuluh-nopember/page-data.json" crossorigin="anonymous"
+    as="fetch">
+  <script charset="utf-8" src="/component---src-templates-blog-post-js-bc1330d6a3fe0cb9486f.js"></script>
+  <script charset="utf-8" src="/component---src-pages-daftar-js-3edd5d5f0023aecc6a56.js"></script>
+  <meta name="description" content="Salam merdeka Sahabat, JePITS adalah singkatan dari Jaringan eks PMII ITS (Pergerakan Mahasiswa Islam Indonesia – Komisariat Institute Teknologi Sepuluh Nopember – Surabaya).&amp;nbsp;Unofficial name dari Foksika PMII Sepuluh Nopember.Dalam blog ini, kami menawarkan wacana alternatif bagi masyarakat progressif Indonesia. Karena kami percaya, blogger Indonesia adalah salah satu kelompok generasi progresif yang akan menentukan kejayaan Indonesia.
+&lt;div&gt;&lt;a class=&quot;btn-filled btn&quot; href=&quot;/jepits-sepuluh-nopember/&quot; title=&quot;JEPITS Sepuluh Nopember&quot;&gt;Read More&lt;/a&gt;&lt;/div&gt;
+" data-react-helmet="true">
+  <meta property="og:image"
+    content="https://pmii1011.github.io/static/183ad13fbe7d37860f030f3aa3874c1b/d1b74/jepits1011.thumbnail.jpg"
+    data-react-helmet="true">
+  <meta property="og:image:secure_url"
+    content="https://pmii1011.github.io/static/183ad13fbe7d37860f030f3aa3874c1b/d1b74/jepits1011.thumbnail.jpg"
+    data-react-helmet="true">
+  <meta property="og:image:width" content="98" data-react-helmet="true">
+  <meta property="og:image:height" content="95" data-react-helmet="true">
+  <meta property="og:image:alt" content="JEPITS Sepuluh Nopember" data-react-helmet="true">
+  <meta property="og:title" content="JEPITS Sepuluh Nopember" data-react-helmet="true">
+  <meta property="og:description" content="Salam merdeka Sahabat, JePITS adalah singkatan dari Jaringan eks PMII ITS (Pergerakan Mahasiswa Islam Indonesia – Komisariat Institute Teknologi Sepuluh Nopember – Surabaya).&amp;nbsp;Unofficial name dari Foksika PMII Sepuluh Nopember.Dalam blog ini, kami menawarkan wacana alternatif bagi masyarakat progressif Indonesia. Karena kami percaya, blogger Indonesia adalah salah satu kelompok generasi progresif yang akan menentukan kejayaan Indonesia.
+&lt;div&gt;&lt;a class=&quot;btn-filled btn&quot; href=&quot;/jepits-sepuluh-nopember/&quot; title=&quot;JEPITS Sepuluh Nopember&quot;&gt;Read More&lt;/a&gt;&lt;/div&gt;
+" data-react-helmet="true">
+  <meta property="og:url" content="https://pmii1011.github.io/jepits-sepuluh-nopember/" data-react-helmet="true">
+  <meta name="twitter:title" content="JEPITS Sepuluh Nopember" data-react-helmet="true">
+  <meta name="twitter:description" content="Salam merdeka Sahabat, JePITS adalah singkatan dari Jaringan eks PMII ITS (Pergerakan Mahasiswa Islam Indonesia – Komisariat Institute Teknologi Sepuluh Nopember – Surabaya).&amp;nbsp;Unofficial name dari Foksika PMII Sepuluh Nopember.Dalam blog ini, kami menawarkan wacana alternatif bagi masyarakat progressif Indonesia. Karena kami percaya, blogger Indonesia adalah salah satu kelompok generasi progresif yang akan menentukan kejayaan Indonesia.
+&lt;div&gt;&lt;a class=&quot;btn-filled btn&quot; href=&quot;/jepits-sepuluh-nopember/&quot; title=&quot;JEPITS Sepuluh Nopember&quot;&gt;Read More&lt;/a&gt;&lt;/div&gt;
+" data-react-helmet="true">
+  <meta name="twitter:image"
+    content="https://pmii1011.github.io/static/183ad13fbe7d37860f030f3aa3874c1b/d1b74/jepits1011.thumbnail.jpg"
+    data-react-helmet="true"> -->
   <link rel="stylesheet" href="../static/css/style.css" />
 </head>
 
 <body>
-  <header class="header-global">
-    <nav id="navbar-main" class="navbar-main navbar-transparent navbar-light headroom navbar navbar-expand-lg">
-      <div class="container"><a aria-current="page" itemProp="url" class="" href="/"><a
-            class="mr-lg-5 navbar-brand"><img alt="..."
-              src="../static/white-be671d3c1486132f5bfbc9b9f2e6fad9.png" /></a></a><button class="navbar-toggler"
-          id="navbar_global"><span class="navbar-toggler-icon"></span></button>
-        <div toggler="#navbar_global" class="collapse navbar-collapse">
-          <div class="navbar-collapse-header">
-            <div class="row">
-              <div class="collapse-brand col-6"><a aria-current="page" class="" href="/"><img alt="..."
-                    src="../static/blue-2438aec598879be1f8ee90f1f9eb2bdd.png" /></a></div>
-              <div class="collapse-close col-6"><button class="navbar-toggler"
-                  id="navbar_global"><span></span><span></span></button></div>
+  <div id="___gatsby">
+    <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+      <header class="header-global">
+        <nav id="navbar-main"
+          class="navbar-main navbar-transparent navbar-light headroom navbar navbar-expand-lg headroom--not-bottom headroom--pinned headroom--top">
+          <div class="container"><a itemprop="url" href="/"><a class="mr-lg-5 navbar-brand"><img alt="..."
+                  src="../static/white-be671d3c1486132f5bfbc9b9f2e6fad9.png"></a></a><button class="navbar-toggler"
+              id="navbar_global"><span class="navbar-toggler-icon"></span></button>
+            <div toggler="#navbar_global" class="collapse navbar-collapse">
+              <div class="navbar-collapse-header">
+                <div class="row">
+                  <div class="collapse-brand col-6"><a href="/"><img alt="..."
+                        src="../static/blue-2438aec598879be1f8ee90f1f9eb2bdd.png"></a></div>
+                  <div class="collapse-close col-6"><button class="navbar-toggler"
+                      id="navbar_global"><span></span><span></span></button></div>
+                </div>
+              </div>
+              <ul class="navbar-nav-hover align-items-lg-center navbar-nav">
+                <li class="nav-item"><a href="/" class="nav-link-icon nav-link"><i
+                      class="fa fa-home d-lg-none"></i><span class="nav-link-inner--text ml-2">Home</span></a></li>
+                <li class="nav-item"><a href="/tentang-kami" class="nav-link-icon nav-link"><i
+                      class="fa fa-address-card-o d-lg-none"></i><span class="nav-link-inner--text ml-2">Tentang
+                      Kami</span></a></li>
+                <li class="dropdown nav-item"><a aria-haspopup="true" href="#" class="nav-link" aria-expanded="false"><i
+                      class="fa fa-gears d-lg-none mr-1"></i><span class="nav-link-inner--text">Rayon</span></a>
+                  <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                    <a href="https://www.instagram.com/pmiiteknik1011/" itemProp="url"><button type="button"
+                        to="/profile-page" tabindex="0" role="menuitem" class="dropdown-item">Teknik
+                        (FV, FTIRS, FTSPK, FTK, FDKBD)</button></a>
+                    <a href="https://www.instagram.com/rayonsains1011/" itemProp="url"><button type="button"
+                        to="/profile-page" tabindex="0" role="menuitem" class="dropdown-item">Sains
+                        (FSAD)</button></a>
+                    <a href="https://www.instagram.com/rayondigitech_1011/" itemProp="url"><button type="button"
+                        to="/profile-page" tabindex="0" role="menuitem" class="dropdown-item">Digitech
+                        (FTEIC, FKK)</button></a>
+                  </div>
+                </li>
+                <li class="dropdown nav-item"><a aria-haspopup="true" href="#" class="nav-link" aria-expanded="false"><i
+                      class="ni ni-ui-04 d-lg-none mr-1"></i><span class="nav-link-inner--text">Komunitas</span></a>
+                  <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl dropdown-menu">
+                    <div class="dropdown-menu-inner"><a href="https://www.instagram.com/astraaksara/" target="_blank"
+                        class="d-flex align-items-center media">
+                        <div class="icon icon-shape bg-gradient-primary rounded-circle text-white"><i
+                            class="ni ni-collection"></i></div>
+                        <div class="ml-3 media-body">
+                          <h6 class="heading text-primary mb-md-1">Komunitas Pena Pergerakan (KPP)</h6>
+                          <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter bidang literasi
+                            dengan memproduksi sebuah buku/ebook.</p>
+                        </div>
+                      </a><a href="https://www.instagram.com/todaycad.pro/" target="_blank"
+                        class="d-flex align-items-center media">
+                        <div class="icon icon-shape bg-gradient-success rounded-circle text-white"><i
+                            class="ni ni-settings-gear-65"></i></div>
+                        <div class="ml-3 media-body">
+                          <h6 class="heading text-primary mb-md-1">CAD Pergerakan (TodayCad Pro)</h6>
+                          <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter bidang desain 3D
+                            dan prototyping sebuah produk.</p>
+                        </div>
+                      </a><a href="https://www.instagram.com/idata1011/" target="_blank"
+                        class="d-flex align-items-center media">
+                        <div class="icon icon-shape bg-gradient-warning rounded-circle text-white"><i
+                            class="ni ni-chart-bar-32"></i></div>
+                        <div class="ml-3 media-body">
+                          <h5 class="heading text-primary mb-md-1">Komunitas Data Science (iData)</h5>
+                          <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter bidang ilmu analisa
+                            data hingga artificial intelligent.</p>
+                        </div>
+                      </a><a href="https://www.instagram.com/santridigital.id/" target="_blank"
+                        class="d-flex align-items-center media">
+                        <div class="icon icon-shape bg-gradient-primary rounded-circle text-white"><i
+                            class="ni ni-laptop"></i></div>
+                        <div class="ml-3 media-body">
+                          <h5 class="heading text-primary mb-md-1">Santri Digital</h5>
+                          <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter dalam bidang
+                            software development.</p>
+                        </div>
+                      </a><a href="#OTW" target="_blank" class="d-flex align-items-center media">
+                        <div class="icon icon-shape bg-gradient-success rounded-circle text-white"><i
+                            class="ni ni-user-run"></i></div>
+                        <div class="ml-3 media-body">
+                          <h5 class="heading text-primary mb-md-1">Jama&#x27;ah Voli Nusantara (JVN)</h5>
+                          <p class="description d-none d-md-inline-block mb-0">Komunitas olahraga meliputi Vutsal, Voli,
+                            Badminton, Jogging dsb.</p>
+                        </div>
+                      </a><a href="#OTW" target="_blank" class="d-flex align-items-center media">
+                        <div class="icon icon-shape bg-gradient-info rounded-circle text-white"><i
+                            class="ni ni-palette"></i></div>
+                        <div class="ml-3 media-body">
+                          <h5 class="heading text-primary mb-md-1">Desain Mantap Jiwa (DMJ)</h5>
+                          <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter bidang seni desain
+                            grafis hingga UI/UX.</p>
+                        </div>
+                      </a></div>
+                  </div>
+                </li>
+                <li class="dropdown nav-item"><a aria-haspopup="true" href="#" class="nav-link" aria-expanded="false"><i
+                      class="fa fa-gears d-lg-none mr-1"></i><span class="nav-link-inner--text">Apps</span></a>
+                  <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><a
+                      href="https://pmii1011.github.io/quran-online" itemProp="url"><button type="button"
+                        to="https://pmii1011.github.io/quran-online" tabindex="0" role="menuitem"
+                        class="dropdown-item">Al Quran Online</button></a><a
+                      href="https://pmii1011.github.io/quran-online/jadwal-sholat/" itemProp="url"><button type="button"
+                        to="https://pmii1011.github.io/quran-online/jadwal-sholat/" tabindex="0" role="menuitem"
+                        class="dropdown-item">Jadwal Shalat</button></a><a itemProp="url" href="/#OTW"><button
+                        type="button" to="#OTW" tabindex="0" role="menuitem" class="dropdown-item">Blog</button></a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="align-items-lg-center ml-lg-auto navbar-nav">
+                <li class="nav-item"><a href="https://www.facebook.com/pmii1011" id="tooltip333589074" target="_blank"
+                    class="nav-link-icon nav-link"><i class="fa fa-facebook-square"></i><span
+                      class="nav-link-inner--text d-lg-none ml-2">Facebook</span></a></li>
+                <li class="nav-item"><a href="https://www.instagram.com/pmii1011" id="tooltip356693867" target="_blank"
+                    class="nav-link-icon nav-link"><i class="fa fa-instagram"></i><span
+                      class="nav-link-inner--text d-lg-none ml-2">Instagram</span></a></li>
+                <li class="nav-item"><a href="https://twitter.com/pmii1011" id="tooltip184698705" target="_blank"
+                    class="nav-link-icon nav-link"><i class="fa fa-twitter-square"></i><span
+                      class="nav-link-inner--text d-lg-none ml-2">Twitter</span></a></li>
+                <li class="nav-item"><a href="https://github.com/pmii1011" id="tooltip112445449" target="_blank"
+                    class="nav-link-icon nav-link"><i class="fa fa-github"></i><span
+                      class="nav-link-inner--text d-lg-none ml-2">Github</span></a></li>
+                <!-- <li class="d-none d-lg-block ml-lg-4 nav-item"><a itemprop="url" href="/daftar"><button
+                      class="btn-neutral btn-icon btn btn-default"><span class="btn-inner--icon"><i
+                          class="fa fa-user-plus mr-2"></i></span><span
+                        class="nav-link-inner--text ml-1">Daftar</span></button></a></li> -->
+              </ul>
             </div>
           </div>
-          <ul class="navbar-nav-hover align-items-lg-center navbar-nav">
-            <li class="nav-item"><a href="/" class="nav-link-icon nav-link"><i
-                  class="fa fa-home d-lg-none"></i><span class="nav-link-inner--text ml-2">Home</span></a></li>
-            <li class="nav-item"><a href="/tentang-kami" class="nav-link-icon nav-link"><i
-                  class="fa fa-address-card-o d-lg-none"></i><span class="nav-link-inner--text ml-2">Tentang
-                  Kami</span></a></li>
-            <li class="dropdown nav-item"><a aria-haspopup="true" href="#" class="nav-link" aria-expanded="false"><i
-                  class="fa fa-gears d-lg-none mr-1"></i><span class="nav-link-inner--text">Rayon</span></a>
-              <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
-                <a href="https://www.instagram.com/pmiiteknik1011/" itemProp="url"><button type="button"
-                    to="/profile-page" tabindex="0" role="menuitem" class="dropdown-item">Teknik
-                    (FV, FTIRS, FTSPK, FTK, FDKBD)</button></a>
-                <a href="https://www.instagram.com/rayonsains1011/" itemProp="url"><button type="button"
-                    to="/profile-page" tabindex="0" role="menuitem" class="dropdown-item">Sains
-                    (FSAD)</button></a>
-                <a href="https://www.instagram.com/rayondigitech_1011/" itemProp="url"><button type="button"
-                    to="/profile-page" tabindex="0" role="menuitem" class="dropdown-item">Digitech
-                    (FTEIC, FKK)</button></a>
+        </nav>
+      </header>
+      <main class="profile-page">
+        <section class="section-profile-cover section-shaped my-0">
+          <div class="shape shape-style-1 shape-default alpha-4">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="separator separator-bottom separator-skew"><svg xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+              <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+            </svg></div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="card-profile shadow mt--300  card">
+              <div class="px-4">
+                <div class="row d-flex justify-content-center text-center mt-5">
+                  <div class="col-lg-9">
+                    <h3>{{ page.title }}</h3>
+                    <h6 class="font-weight-300"><span><i class="fa fa-pencil mr-2"></i>by
+                        {{ page.author }}</span>&nbsp;&nbsp;&nbsp;
+                        <span>
+                          <i class="fa fa-calendar mr-2"></i>{{ page.date | date: "%d %B %Y" }}
+                        </span></h6>
+                  </div>
+                </div>
+                <div class="text-justify">
+                  <div class="justify-content-center row">
+                    <div class="col-lg-9">
+                      <div class="mb-2 rounded gatsby-image-wrapper" style="position: relative; overflow: hidden;">
+                          {% if page.featured_image %}
+                          <!-- <div class="featured-image" style="max-width: 800px; margin-bottom: 1rem;"> -->
+                            <img src="../{{ page.featured_image }}" alt="{{ page.title }}"
+                              style="width: 100%; height: auto; object-fit: cover;" />
+                          <!-- </div> -->
+                          {% endif %}
+                      </div>
+                        {{ content }}
+                    </div>
+                  </div>
+                </div>
+                <div class="py-3 mb-5 text-justify">
+                  <div class="justify-content-center row">
+                    <div class="col-lg-9"><span class="text-lead"> Bagikan : &nbsp;</span><a
+                        href="https://api.whatsapp.com/send?text=https://pmii1011.github.io/{{ post.url }}"
+                        target="_blank" class="btn-primary  btn btn-success btn-sm"><i
+                          class="fa fa-whatsapp mx-1"></i>&nbsp; Whatsapp</a><a
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://pmii1011.github.io/{{ post.url }}"
+                        target="_blank" class="btn-primary  btn btn-primary btn-sm"><i
+                          class="fa fa-facebook mx-1"></i>&nbsp; Facebook</a><a
+                        href="https://twitter.com/intent/tweet?url=https://pmii1011.github.io/{{ post.url }}"
+                        target="_blank" class="btn-primary  btn btn-info btn-sm"><i
+                          class="fa fa-twitter mx-1"></i>&nbsp; Twitter</a></div>
+                  </div>
+                </div>
               </div>
-            </li>
-            <li class="dropdown nav-item"><a aria-haspopup="true" href="#" class="nav-link" aria-expanded="false"><i
-                  class="ni ni-ui-04 d-lg-none mr-1"></i><span class="nav-link-inner--text">Komunitas</span></a>
-              <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl dropdown-menu">
-                <div class="dropdown-menu-inner"><a href="https://www.instagram.com/astraaksara/" target="_blank"
-                    class="d-flex align-items-center media">
-                    <div class="icon icon-shape bg-gradient-primary rounded-circle text-white"><i
-                        class="ni ni-collection"></i></div>
-                    <div class="ml-3 media-body">
-                      <h6 class="heading text-primary mb-md-1">Komunitas Pena Pergerakan (KPP)</h6>
-                      <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter bidang literasi
-                        dengan memproduksi sebuah buku/ebook.</p>
-                    </div>
-                  </a><a href="https://www.instagram.com/todaycad.pro/" target="_blank"
-                    class="d-flex align-items-center media">
-                    <div class="icon icon-shape bg-gradient-success rounded-circle text-white"><i
-                        class="ni ni-settings-gear-65"></i></div>
-                    <div class="ml-3 media-body">
-                      <h6 class="heading text-primary mb-md-1">CAD Pergerakan (TodayCad Pro)</h6>
-                      <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter bidang desain 3D
-                        dan prototyping sebuah produk.</p>
-                    </div>
-                  </a><a href="https://www.instagram.com/idata1011/" target="_blank"
-                    class="d-flex align-items-center media">
-                    <div class="icon icon-shape bg-gradient-warning rounded-circle text-white"><i
-                        class="ni ni-chart-bar-32"></i></div>
-                    <div class="ml-3 media-body">
-                      <h5 class="heading text-primary mb-md-1">Komunitas Data Science (iData)</h5>
-                      <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter bidang ilmu analisa
-                        data hingga artificial intelligent.</p>
-                    </div>
-                  </a><a href="https://www.instagram.com/santridigital.id/" target="_blank"
-                    class="d-flex align-items-center media">
-                    <div class="icon icon-shape bg-gradient-primary rounded-circle text-white"><i
-                        class="ni ni-laptop"></i></div>
-                    <div class="ml-3 media-body">
-                      <h5 class="heading text-primary mb-md-1">Santri Digital</h5>
-                      <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter dalam bidang
-                        software development.</p>
-                    </div>
-                  </a><a href="#OTW" target="_blank" class="d-flex align-items-center media">
-                    <div class="icon icon-shape bg-gradient-success rounded-circle text-white"><i
-                        class="ni ni-user-run"></i></div>
-                    <div class="ml-3 media-body">
-                      <h5 class="heading text-primary mb-md-1">Jama&#x27;ah Voli Nusantara (JVN)</h5>
-                      <p class="description d-none d-md-inline-block mb-0">Komunitas olahraga meliputi Vutsal, Voli,
-                        Badminton, Jogging dsb.</p>
-                    </div>
-                  </a><a href="#OTW" target="_blank" class="d-flex align-items-center media">
-                    <div class="icon icon-shape bg-gradient-info rounded-circle text-white"><i
-                        class="ni ni-palette"></i></div>
-                    <div class="ml-3 media-body">
-                      <h5 class="heading text-primary mb-md-1">Desain Mantap Jiwa (DMJ)</h5>
-                      <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter bidang seni desain
-                        grafis hingga UI/UX.</p>
-                    </div>
-                  </a></div>
-              </div>
-            </li>
-            <li class="dropdown nav-item"><a aria-haspopup="true" href="#" class="nav-link" aria-expanded="false"><i
-                  class="fa fa-gears d-lg-none mr-1"></i><span class="nav-link-inner--text">Apps</span></a>
-              <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><a
-                  href="https://pmii1011.github.io/quran-online" itemProp="url"><button type="button"
-                    to="https://pmii1011.github.io/quran-online" tabindex="0" role="menuitem"
-                    class="dropdown-item">Al Quran Online</button></a><a
-                  href="https://pmii1011.github.io/quran-online/jadwal-sholat/" itemProp="url"><button type="button"
-                    to="https://pmii1011.github.io/quran-online/jadwal-sholat/" tabindex="0" role="menuitem"
-                    class="dropdown-item">Jadwal Shalat</button></a><a itemProp="url" href="/#OTW"><button
-                    type="button" to="#OTW" tabindex="0" role="menuitem" class="dropdown-item">Blog</button></a>
-              </div>
-            </li>
-          </ul>
-          <ul class="align-items-lg-center ml-lg-auto navbar-nav">
-            <li class="nav-item"><a href="https://www.facebook.com/pmii1011" id="tooltip333589074" target="_blank"
-                class="nav-link-icon nav-link"><i class="fa fa-facebook-square"></i><span
-                  class="nav-link-inner--text d-lg-none ml-2">Facebook</span></a></li>
-            <li class="nav-item"><a href="https://www.instagram.com/pmii1011" id="tooltip356693867" target="_blank"
-                class="nav-link-icon nav-link"><i class="fa fa-instagram"></i><span
-                  class="nav-link-inner--text d-lg-none ml-2">Instagram</span></a></li>
-            <li class="nav-item"><a href="https://twitter.com/pmii1011" id="tooltip184698705" target="_blank"
-                class="nav-link-icon nav-link"><i class="fa fa-twitter-square"></i><span
-                  class="nav-link-inner--text d-lg-none ml-2">Twitter</span></a></li>
-            <li class="nav-item"><a href="https://github.com/pmii1011" id="tooltip112445449" target="_blank"
-                class="nav-link-icon nav-link"><i class="fa fa-github"></i><span
-                  class="nav-link-inner--text d-lg-none ml-2">Github</span></a></li>
-            <!-- <li class="d-none d-lg-block ml-lg-4 nav-item"><a itemProp="url" href="/daftar"><button
-                  class="btn-neutral btn-icon btn btn-default"><span class="btn-inner--icon"><i
-                      class="fa fa-user-plus mr-2"></i></span><span
-                    class="nav-link-inner--text ml-1">Daftar</span></button></a>
-            </li> -->
-          </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer has-cards">
+        <div class="container">
+          <div class="row-grid align-items-center my-md row">
+            <div class="col-lg-6">
+              <h3 class="text-primary font-weight-light mb-2">Terima kasih telah berkunjung..</h3>
+              <h4 class="mb-0 font-weight-light">Mari saling terhubung dengan salah satu platform berikut.</h4>
+            </div>
+            <div class="text-lg-center btn-wrapper col-lg-6"><a href="https://twitter.com/pmii1011"
+                id="tooltip475038074" target="_blank" class="btn-icon-only rounded-circle btn btn-twitter"><span
+                  class="btn-inner--icon"><i class="fa fa-twitter"></i></span></a><a
+                href="https://www.facebook.com/pmii1011" id="tooltip837440414" target="_blank"
+                class="btn-icon-only rounded-circle ml-1 btn btn-facebook"><span class="btn-inner--icon"><i
+                    class="fa fa-facebook-square"></i></span></a><a href="https://instagram.com/pmii1011"
+                id="tooltip829810202" target="_blank" class="btn-icon-only rounded-circle ml-1 btn btn-dribbble"><span
+                  class="btn-inner--icon"><i class="fa fa-instagram"></i></span></a><a href="https://wa.me/085733179537"
+                id="tooltip829810201" target="_blank" class="btn-icon-only rounded-circle ml-1 btn btn-success"><span
+                  class="btn-inner--icon"><i class="fa fa-whatsapp"></i></span></a><a href="mailto:pmii1011e@gmail.com"
+                id="tooltip829810200" target="_blank" class="btn-icon-only rounded-circle ml-1 btn btn-white"><span
+                  class="btn-inner--icon"><i class="fa fa-google"></i></span></a><a href="https://github.com/pmii1011"
+                id="tooltip495507257" target="_blank" class="btn-icon-only rounded-circle ml-1 btn btn-github"><span
+                  class="btn-inner--icon"><i class="fa fa-github"></i></span></a></div>
+          </div>
+          <hr>
+          <div class="align-items-center justify-content-md-between row">
+            <div class="col-md-6">
+              <div class="copyright">© 2025 <a href="https://pmii1011.github.io" target="_blank">PMII Sepuluh
+                  Nopember</a>.</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </footer>
+    </div>
+  </div>
+</body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar>
 
-  <main class="container my-5">
-    <!-- <section class="section-profile-cover rounded shadow" aria-label="Profile Cover">
+</html>
+
+<main class="container my-5">
+  <!-- <section class="section-profile-cover rounded shadow" aria-label="Profile Cover">
       Background image ada di CSS
     </section> -->
 
-    <div class="card-profile shadow">
-      <div class="px-4">
-        <div class="row justify-content-center text-center mt-5">
-          <div class="col-lg-9">
-            <h3>{{ page.title }}</h3>
-            <h6 class="font-weight-light text-muted">
-              {% if page.author %}
-              <span><i class="fa fa-pencil mr-2"></i>by {{ page.author }}</span> &nbsp;&nbsp;&nbsp;
-              {% else %}
-              <span><i class="fa fa-pencil mr-2"></i>by Admin</span> &nbsp;&nbsp;&nbsp;
-              {% endif %}
-              <span><i class="fa fa-calendar mr-2"></i>{{ page.date | date: "%d %B %Y" }}</span>
-            </h6>
-            <hr />
-            <div class="text-justify">
-              {% if page.featured_image %}
-                <div class="featured-image" style="max-width: 800px; margin-bottom: 1rem;">
-                  <img src="../{{ page.featured_image }}" alt="{{ page.title }}" style="width: 100%; height: auto; object-fit: cover;" />
-                </div>
-              {% endif %}
-
-              {{ content }}
+  <div class="card-profile shadow">
+    <div class="px-4">
+      <div class="row justify-content-center text-center mt-5">
+        <div class="col-lg-9">
+          <h3>{{ page.title }}</h3>
+          <h6 class="font-weight-light text-muted">
+            {% if page.author %}
+            <span><i class="fa fa-pencil mr-2"></i>by {{ page.author }}</span> &nbsp;&nbsp;&nbsp;
+            {% else %}
+            <span><i class="fa fa-pencil mr-2"></i>by Admin</span> &nbsp;&nbsp;&nbsp;
+            {% endif %}
+            <span><i class="fa fa-calendar mr-2"></i>{{ page.date | date: "%d %B %Y" }}</span>
+          </h6>
+          <hr />
+          <div class="text-justify">
+            {% if page.featured_image %}
+            <div class="featured-image" style="max-width: 800px; margin-bottom: 1rem;">
+              <img src="../{{ page.featured_image }}" alt="{{ page.title }}"
+                style="width: 100%; height: auto; object-fit: cover;" />
             </div>
+            {% endif %}
+
+            {{ content }}
           </div>
         </div>
       </div>
     </div>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+  </div>
+<!-- </main> -->
