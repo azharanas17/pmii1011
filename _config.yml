@@ -1,6 +1,6 @@
 title: PMII Sepuluh Nopember
 description: Website resmi PMII Sepuluh Nopember
-baseurl: "pmii1011"
+baseurl: "/pmii1011"
 url: "https://azharanas17.github.io"
 
 theme: minima
