@@ -2,7 +2,7 @@ backend:
   name: github
   repo: azharanas17/pmii1011
   branch: main
-  base_url: pmii1011.hrzpitulas17.workers.dev
+  base_url: https://pmii1011.hrzpitulas17.workers.dev
   auth_endpoint: oauth/authorize
 
 media_folder: "assets/uploads"
