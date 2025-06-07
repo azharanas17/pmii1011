@@ -8,307 +8,132 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="./static/css/style.css" />
-  <style>
-    /* Custom styling supaya mirip contoh */
-    body {
-      background-color: #f8f9fa;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .navbar-main {
-      background-color: transparent;
-      transition: background-color 0.3s ease;
-    }
-
-    .navbar-main.navbar-transparent {
-      background-color: transparent;
-    }
-
-    .navbar-main.navbar-light .navbar-nav .nav-link {
-      color: #555;
-      font-weight: 500;
-    }
-
-    .navbar-main.navbar-light .navbar-nav .nav-link:hover,
-    .navbar-main.navbar-light .navbar-nav .nav-link:focus {
-      color: #007bff;
-    }
-
-    .navbar-brand img {
-      max-height: 40px;
-    }
-
-    .dropdown-menu-xl {
-      min-width: 350px;
-    }
-
-    .dropdown-menu-inner a.media {
-      padding: 10px;
-      border-bottom: 1px solid #eee;
-      color: #444;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-    }
-
-    .dropdown-menu-inner a.media:hover {
-      background-color: #f0f8ff;
-      text-decoration: none;
-    }
-
-    .icon-shape {
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      color: #fff;
-      font-size: 18px;
-    }
-
-    .bg-gradient-primary {
-      background: linear-gradient(45deg, #007bff, #0056b3);
-    }
-
-    .bg-gradient-success {
-      background: linear-gradient(45deg, #28a745, #19692c);
-    }
-
-    .bg-gradient-warning {
-      background: linear-gradient(45deg, #ffc107, #d39e00);
-    }
-
-    .bg-gradient-info {
-      background: linear-gradient(45deg, #17a2b8, #0f6674);
-    }
-
-    .btn-neutral {
-      background-color: transparent;
-      border: 1px solid #007bff;
-      color: #007bff;
-      transition: all 0.3s ease;
-    }
-
-    .btn-neutral:hover {
-      background-color: #007bff;
-      color: white;
-    }
-
-    .section-profile-cover {
-      position: relative;
-      height: 300px;
-      background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80") center/cover no-repeat;
-    }
-
-    .card-profile {
-      margin-top: -150px;
-      border-radius: 1rem;
-      box-shadow: 0 0 15px rgb(0 0 0 / 0.15);
-      padding: 2rem;
-      background: white;
-    }
-
-    h3,
-    h6 {
-      color: #222;
-    }
-
-    .text-justify {
-      text-align: justify;
-      color: #555;
-    }
-  </style>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-main navbar-transparent">
-      <div class="container">
-        <a class="navbar-brand" href="/">
-          <img src="/static/white-be671d3c1486132f5bfbc9b9f2e6fad9.png" alt="Logo PMII" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_global"
-          aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbar_global">
-          <ul class="navbar-nav me-auto align-items-lg-center">
-            <li class="nav-item">
-              <a href="/" class="nav-link"><i class="fa fa-home d-lg-none"></i> Home</a>
+  <header class="header-global">
+    <nav id="navbar-main" class="navbar-main navbar-transparent navbar-light headroom navbar navbar-expand-lg">
+      <div class="container"><a aria-current="page" itemProp="url" class="" href="/"><a
+            class="mr-lg-5 navbar-brand"><img alt="..."
+              src="./static/white-be671d3c1486132f5bfbc9b9f2e6fad9.png" /></a></a><button class="navbar-toggler"
+          id="navbar_global"><span class="navbar-toggler-icon"></span></button>
+        <div toggler="#navbar_global" class="collapse navbar-collapse">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="collapse-brand col-6"><a aria-current="page" class="" href="/"><img alt="..."
+                    src="./static/blue-2438aec598879be1f8ee90f1f9eb2bdd.png" /></a></div>
+              <div class="collapse-close col-6"><button class="navbar-toggler"
+                  id="navbar_global"><span></span><span></span></button></div>
+            </div>
+          </div>
+          <ul class="navbar-nav-hover align-items-lg-center navbar-nav">
+            <li class="nav-item"><a href="/" class="nav-link-icon nav-link"><i
+                  class="fa fa-home d-lg-none"></i><span class="nav-link-inner--text ml-2">Home</span></a></li>
+            <li class="nav-item"><a href="/tentang-kami" class="nav-link-icon nav-link"><i
+                  class="fa fa-address-card-o d-lg-none"></i><span class="nav-link-inner--text ml-2">Tentang
+                  Kami</span></a></li>
+            <li class="dropdown nav-item"><a aria-haspopup="true" href="#" class="nav-link" aria-expanded="false"><i
+                  class="fa fa-gears d-lg-none mr-1"></i><span class="nav-link-inner--text">Rayon</span></a>
+              <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                <a href="https://www.instagram.com/pmiiteknik1011/" itemProp="url"><button type="button"
+                    to="/profile-page" tabindex="0" role="menuitem" class="dropdown-item">Teknik
+                    (FV, FTIRS, FTSPK, FTK, FDKBD)</button></a>
+                <a href="https://www.instagram.com/rayonsains1011/" itemProp="url"><button type="button"
+                    to="/profile-page" tabindex="0" role="menuitem" class="dropdown-item">Sains
+                    (FSAD)</button></a>
+                <a href="https://www.instagram.com/rayondigitech_1011/" itemProp="url"><button type="button"
+                    to="/profile-page" tabindex="0" role="menuitem" class="dropdown-item">Digitech
+                    (FTEIC, FKK)</button></a>
+              </div>
             </li>
-            <li class="nav-item">
-              <a href="/tentang-kami" class="nav-link"><i class="fa fa-address-card-o d-lg-none"></i> Tentang
-                Kami</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdownRayon" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Rayon
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownRayon">
-                <li>
-                  <a class="dropdown-item" href="https://www.instagram.com/pmiiteknik1011/">Teknik (ITS)</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="https://www.instagram.com/pmii.rayonbahari/">Bahari (PPNS)</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="https://www.instagram.com/pmiirayonpens/">PENS</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdownKomunitas" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Komunitas
-              </a>
-              <ul class="dropdown-menu dropdown-menu-xl p-3" aria-labelledby="dropdownKomunitas">
-                <div class="dropdown-menu-inner">
-                  <a href="https://www.instagram.com/astraaksara/" target="_blank" class="media">
-                    <div class="icon-shape bg-gradient-primary">
-                      <i class="ni ni-collection fa fa-book"></i>
-                    </div>
-                    <div class="ms-3 media-body">
-                      <h6 class="text-primary mb-1">
-                        Komunitas Pena Pergerakan (KPP)
-                      </h6>
-                      <p class="mb-0 small">
-                        Pengembangan karakter bidang literasi dengan
-                        memproduksi sebuah buku/ebook.
-                      </p>
-                    </div>
-                  </a>
-                  <a href="https://www.instagram.com/todaycad.pro/" target="_blank" class="media">
-                    <div class="icon-shape bg-gradient-success">
-                      <i class="ni ni-settings-gear-65 fa fa-cogs"></i>
-                    </div>
-                    <div class="ms-3 media-body">
-                      <h6 class="text-primary mb-1">
-                        CAD Pergerakan (TodayCad Pro)
-                      </h6>
-                      <p class="mb-0 small">
-                        Pengembangan karakter bidang desain 3D dan prototyping
-                        sebuah produk.
-                      </p>
-                    </div>
-                  </a>
-                  <a href="https://www.instagram.com/idata1011/" target="_blank" class="media">
-                    <div class="icon-shape bg-gradient-warning">
-                      <i class="ni ni-chart-bar-32 fa fa-bar-chart"></i>
-                    </div>
-                    <div class="ms-3 media-body">
-                      <h6 class="text-primary mb-1">
-                        Komunitas Data Science (iData)
-                      </h6>
-                      <p class="mb-0 small">
-                        Pengembangan karakter bidang ilmu analisa data hingga
-                        artificial intelligent.
-                      </p>
-                    </div>
-                  </a>
-                  <a href="https://www.instagram.com/santridigital.id/" target="_blank"
+            <li class="dropdown nav-item"><a aria-haspopup="true" href="#" class="nav-link" aria-expanded="false"><i
+                  class="ni ni-ui-04 d-lg-none mr-1"></i><span class="nav-link-inner--text">Komunitas</span></a>
+              <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl dropdown-menu">
+                <div class="dropdown-menu-inner"><a href="https://www.instagram.com/astraaksara/" target="_blank"
                     class="d-flex align-items-center media">
-                    <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
-                      <i class="ni ni-laptop"></i>
-                    </div>
+                    <div class="icon icon-shape bg-gradient-primary rounded-circle text-white"><i
+                        class="ni ni-collection"></i></div>
                     <div class="ml-3 media-body">
-                      <h5 class="heading text-primary mb-md-1">
-                        Santri Digital
-                      </h5>
-                      <p class="description d-none d-md-inline-block mb-0">
-                        Pengembangan karakter dalam bidang software
-                        development.
-                      </p>
+                      <h6 class="heading text-primary mb-md-1">Komunitas Pena Pergerakan (KPP)</h6>
+                      <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter bidang literasi
+                        dengan memproduksi sebuah buku/ebook.</p>
                     </div>
-                  </a>
-                  <a href="#OTW" target="_blank" class="d-flex align-items-center media">
-                    <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                      <i class="ni ni-user-run"></i>
-                    </div>
+                  </a><a href="https://www.instagram.com/todaycad.pro/" target="_blank"
+                    class="d-flex align-items-center media">
+                    <div class="icon icon-shape bg-gradient-success rounded-circle text-white"><i
+                        class="ni ni-settings-gear-65"></i></div>
                     <div class="ml-3 media-body">
-                      <h5 class="heading text-primary mb-md-1">
-                        Jama&#x27;ah Voli Nusantara (JVN)
-                      </h5>
-                      <p class="description d-none d-md-inline-block mb-0">
-                        Komunitas olahraga meliputi Vutsal, Voli, Badminton,
-                        Jogging dsb.
-                      </p>
+                      <h6 class="heading text-primary mb-md-1">CAD Pergerakan (TodayCad Pro)</h6>
+                      <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter bidang desain 3D
+                        dan prototyping sebuah produk.</p>
                     </div>
-                  </a>
-                  <a href="#OTW" target="_blank" class="d-flex align-items-center media">
-                    <div class="icon icon-shape bg-gradient-info rounded-circle text-white">
-                      <i class="ni ni-palette"></i>
-                    </div>
+                  </a><a href="https://www.instagram.com/idata1011/" target="_blank"
+                    class="d-flex align-items-center media">
+                    <div class="icon icon-shape bg-gradient-warning rounded-circle text-white"><i
+                        class="ni ni-chart-bar-32"></i></div>
                     <div class="ml-3 media-body">
-                      <h5 class="heading text-primary mb-md-1">
-                        Desain Mantap Jiwa (DMJ)
-                      </h5>
-                      <p class="description d-none d-md-inline-block mb-0">
-                        Pengembangan karakter bidang seni desain grafis hingga
-                        UI/UX.
-                      </p>
+                      <h5 class="heading text-primary mb-md-1">Komunitas Data Science (iData)</h5>
+                      <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter bidang ilmu analisa
+                        data hingga artificial intelligent.</p>
                     </div>
-                  </a>
-                </div>
-              </ul>
+                  </a><a href="https://www.instagram.com/santridigital.id/" target="_blank"
+                    class="d-flex align-items-center media">
+                    <div class="icon icon-shape bg-gradient-primary rounded-circle text-white"><i
+                        class="ni ni-laptop"></i></div>
+                    <div class="ml-3 media-body">
+                      <h5 class="heading text-primary mb-md-1">Santri Digital</h5>
+                      <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter dalam bidang
+                        software development.</p>
+                    </div>
+                  </a><a href="#OTW" target="_blank" class="d-flex align-items-center media">
+                    <div class="icon icon-shape bg-gradient-success rounded-circle text-white"><i
+                        class="ni ni-user-run"></i></div>
+                    <div class="ml-3 media-body">
+                      <h5 class="heading text-primary mb-md-1">Jama&#x27;ah Voli Nusantara (JVN)</h5>
+                      <p class="description d-none d-md-inline-block mb-0">Komunitas olahraga meliputi Vutsal, Voli,
+                        Badminton, Jogging dsb.</p>
+                    </div>
+                  </a><a href="#OTW" target="_blank" class="d-flex align-items-center media">
+                    <div class="icon icon-shape bg-gradient-info rounded-circle text-white"><i
+                        class="ni ni-palette"></i></div>
+                    <div class="ml-3 media-body">
+                      <h5 class="heading text-primary mb-md-1">Desain Mantap Jiwa (DMJ)</h5>
+                      <p class="description d-none d-md-inline-block mb-0">Pengembangan karakter bidang seni desain
+                        grafis hingga UI/UX.</p>
+                    </div>
+                  </a></div>
+              </div>
             </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdownApps" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Apps
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownApps">
-                <li>
-                  <a class="dropdown-item" href="https://pmii1011.github.io/quran-online">Al Quran Online</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="https://pmii1011.github.io/quran-online/jadwal-sholat/">Jadwal
-                    Shalat</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/sejarah-pmii-sepuluh-nopember/#OTW">Blog</a>
-                </li>
-              </ul>
+            <li class="dropdown nav-item"><a aria-haspopup="true" href="#" class="nav-link" aria-expanded="false"><i
+                  class="fa fa-gears d-lg-none mr-1"></i><span class="nav-link-inner--text">Apps</span></a>
+              <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu"><a
+                  href="https://pmii1011.github.io/quran-online" itemProp="url"><button type="button"
+                    to="https://pmii1011.github.io/quran-online" tabindex="0" role="menuitem"
+                    class="dropdown-item">Al Quran Online</button></a><a
+                  href="https://pmii1011.github.io/quran-online/jadwal-sholat/" itemProp="url"><button type="button"
+                    to="https://pmii1011.github.io/quran-online/jadwal-sholat/" tabindex="0" role="menuitem"
+                    class="dropdown-item">Jadwal Shalat</button></a><a itemProp="url" href="/#OTW"><button
+                    type="button" to="#OTW" tabindex="0" role="menuitem" class="dropdown-item">Blog</button></a>
+              </div>
             </li>
           </ul>
-
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item">
-              <a href="https://www.facebook.com/pmii1011" target="_blank" class="nav-link"><i
-                  class="fa fa-facebook-square"></i></a>
-            </li>
-            <li class="nav-item">
-              <a href="https://www.instagram.com/pmii1011" target="_blank" class="nav-link"><i
-                  class="fa fa-instagram"></i></a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com/pmii1011" target="_blank" class="nav-link"><i
-                  class="fa fa-twitter-square"></i></a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdownUser" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <img src="/static/profile.jpg" alt="User" class="rounded-circle" width="35" height="35" />
-                <span class="d-none d-lg-inline ms-2">Halo, User</span>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
-                <li><a class="dropdown-item" href="/profile">Profile</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <form action="/logout" method="POST" class="m-0 p-0">
-                    <button type="submit" class="dropdown-item">
-                      Logout
-                    </button>
-                  </form>
-                </li>
-              </ul>
+          <ul class="align-items-lg-center ml-lg-auto navbar-nav">
+            <li class="nav-item"><a href="https://www.facebook.com/pmii1011" id="tooltip333589074" target="_blank"
+                class="nav-link-icon nav-link"><i class="fa fa-facebook-square"></i><span
+                  class="nav-link-inner--text d-lg-none ml-2">Facebook</span></a></li>
+            <li class="nav-item"><a href="https://www.instagram.com/pmii1011" id="tooltip356693867" target="_blank"
+                class="nav-link-icon nav-link"><i class="fa fa-instagram"></i><span
+                  class="nav-link-inner--text d-lg-none ml-2">Instagram</span></a></li>
+            <li class="nav-item"><a href="https://twitter.com/pmii1011" id="tooltip184698705" target="_blank"
+                class="nav-link-icon nav-link"><i class="fa fa-twitter-square"></i><span
+                  class="nav-link-inner--text d-lg-none ml-2">Twitter</span></a></li>
+            <li class="nav-item"><a href="https://github.com/pmii1011" id="tooltip112445449" target="_blank"
+                class="nav-link-icon nav-link"><i class="fa fa-github"></i><span
+                  class="nav-link-inner--text d-lg-none ml-2">Github</span></a></li>
+            <!-- <li class="d-none d-lg-block ml-lg-4 nav-item"><a itemProp="url" href="/daftar"><button
+                  class="btn-neutral btn-icon btn btn-default"><span class="btn-inner--icon"><i
+                      class="fa fa-user-plus mr-2"></i></span><span
+                    class="nav-link-inner--text ml-1">Daftar</span></button></a>
             </li> -->
           </ul>
         </div>
@@ -328,21 +153,21 @@
             <h3>{{ page.title }}</h3>
             <h6 class="font-weight-light text-muted">
               {% if page.author %}
-              <span><i class="fa fa-pencil mr-2"></i>by {{ page.author }}</span>
-              &nbsp;&nbsp;&nbsp; {% else %}
-              <span><i class="fa fa-pencil mr-2"></i>by Admin</span>
-              &nbsp;&nbsp;&nbsp; {% endif %}
-              <span><i class="fa fa-calendar mr-2"></i>{{ page.date | date: "%d
-                %B %Y" }}</span>
+              <span><i class="fa fa-pencil mr-2"></i>by {{ page.author }}</span> &nbsp;&nbsp;&nbsp;
+              {% else %}
+              <span><i class="fa fa-pencil mr-2"></i>by Admin</span> &nbsp;&nbsp;&nbsp;
+              {% endif %}
+              <span><i class="fa fa-calendar mr-2"></i>{{ page.date | date: "%d %B %Y" }}</span>
             </h6>
             <hr />
             <div class="text-justify">
               {% if page.featured_image %}
-              <div class="featured-image" style="max-width: 800px; margin-bottom: 1rem">
-                <img src="{{ page.featured_image }}" alt="{{ page.title }}"
-                  style="width: 100%; height: auto; object-fit: cover" />
-              </div>
-              {% endif %} {{ content }}
+                <div class="featured-image" style="max-width: 800px; margin-bottom: 1rem;">
+                  <img src="{{ page.featured_image }}" alt="{{ page.title }}" style="width: 100%; height: auto; object-fit: cover;" />
+                </div>
+              {% endif %}
+
+              {{ content }}
             </div>
           </div>
         </div>
