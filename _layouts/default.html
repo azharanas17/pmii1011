@@ -34223,15 +34223,38 @@
     </div>
     <div class="row-grid d-flex justify-content-center row">
       {% for post in site.posts %}
-      <div class="my-md-3 col-md-4" style="height: 500px;">
-        <div class="overflow-hidden bg-default shadow border-0 h-100 h-sm-75 h-md-100 card">
-          <div class="card-body">
-            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-            <p>{{ post.excerpt }}</p>
-            <p><small>{{ post.date | date: "%d %B %Y" }}</small></p>
+        <div class="my-md-3 col-md-4" style="height: 500px;">
+          <div class="overflow-hidden bg-default shadow border-0 h-100 card">
+            
+            <div class="overflow-hidden gatsby-image-wrapper" style="position: relative; height: 250px; object-fit: cover;">
+              <img src="{{ post.featured_image }}" alt="{{ post.title }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center;">
+            </div>
+            
+            <blockquote class="card-blockquote h-100 overflow-hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="svg-bg" preserveAspectRatio="none" viewBox="0 0 583 95">
+                <polygon class="fill-default" points="0,52 583,95 0,95"></polygon>
+                <polygon class="fill-default" opacity=".2" points="0,42 583,95 683,0 0,95"></polygon>
+              </svg>
+              
+              <a itemprop="url" href="{{ post.url }}">
+                <h5 class="font-weight-bold text-white">{{ post.title }}</h5>
+              </a>
+              
+              {% if post.author %}
+                <p class="text-white mb-1"><small>by {{ post.author }}</small></p>
+              {% endif %}
+
+              <p class="text-italic text-white text-justify description">
+                {{ post.excerpt }}
+              </p>
+              
+              <p class="text-white">
+                <small>{{ post.date | date: "%d %B %Y" }}</small>
+              </p>
+            </blockquote>
+            
           </div>
         </div>
-      </div>
       {% endfor %}
     </div>
   </div>
