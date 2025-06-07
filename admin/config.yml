@@ -3,7 +3,7 @@ backend:
   repo: azharanas17/pmii1011
   branch: main
   base_url: https://pmii1011.hrzpitulas17.workers.dev
-  auth_endpoint: oauth/authorize
+  auth_endpoint: auth
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
