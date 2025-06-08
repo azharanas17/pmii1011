@@ -273,13 +273,13 @@
                 <div class="py-3 mb-5 text-justify">
                   <div class="justify-content-center row">
                     <div class="col-lg-9"><span class="text-lead"> Bagikan : &nbsp;</span><a
-                        href="https://api.whatsapp.com/send?text=https://pmii1011.github.io/{{ page.url }}"
+                        href="https://api.whatsapp.com/send?text=https://pmii1011.github.io{{ page.url }}"
                         target="_blank" class="btn-primary  btn btn-success btn-sm"><i
                           class="fa fa-whatsapp mx-1"></i>&nbsp; Whatsapp</a><a
-                        href="https://www.facebook.com/sharer/sharer.php?u=https://pmii1011.github.io/{{ page.url }}"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://pmii1011.github.io{{ page.url }}"
                         target="_blank" class="btn-primary  btn btn-primary btn-sm"><i
                           class="fa fa-facebook mx-1"></i>&nbsp; Facebook</a><a
-                        href="https://twitter.com/intent/tweet?url=https://pmii1011.github.io/{{ page.url }}"
+                        href="https://twitter.com/intent/tweet?url=https://pmii1011.github.io{{ page.url }}"
                         target="_blank" class="btn-primary  btn btn-info btn-sm"><i
                           class="fa fa-twitter mx-1"></i>&nbsp; Twitter</a></div>
                   </div>
@@ -325,7 +325,7 @@
 
   <script>
   window.addEventListener('scroll', function () {
-    var header = document.querySelector('.header-global');
+    var header = document.querySelector('.navbar-main');
     if (window.scrollY > 50) {
       header.classList.add('header-scrolled');
     } else {
